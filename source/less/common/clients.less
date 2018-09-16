@@ -1,0 +1,38 @@
+.clients {
+  background-image: url("../img/clients-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+}
+
+.clients__title {
+  font-family: "Trirong", "Times New Roman", serif;
+  text-align: center;
+  font-size: 40px;
+  line-height: 76px;
+  font-weight: @light;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clients__item {
+  // width: 175px;
+  padding: 10px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .clients {
+    padding-left: 13.5%;
+    padding-right: 13.5%;
+  }
+}

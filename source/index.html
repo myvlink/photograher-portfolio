@@ -7,11 +7,233 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
+      <a class="page-header__logo">
+        <svg class="page-header__logo-img" width="30" height="30">
+          <use xlink:href="#icon-photographer-logo"></use>
+        </svg>
+        <p class="page-header__logo-name">Photography</p>
+      </a>
       <nav class="main-nav">
+        <ul class="main-nav__menu-list">
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Home</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">About</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Clients</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Portfolio</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Blog</a>
+          </li>
+        </ul>
       </nav>
     </header>
+    <main>
+      <section class="hero">
+        <h2 class="hero__title">Hello, I'm Dakota Jhonson</h2>
+        <p class="hero__description">I’m an Art Director & Photographer based in the San Francisco.</p>
+        <a class="hero__link" href="#">See My Works</a>
+      </section>
+      <section class="about-me">
+        <img class="about-me__image" src="img/about-me-img.png" alt="about-me-img">
+        <div class="about-me__container">
+          <div class="about-me__info">
+            <h2 class="about-me__title">About MySelf</h2>
+            <p class="about-me__description">Hey, thanks for stopping by. My name’s Dakota Jhonson junior and I’m a briliant Art Director and pro Photographer based in the San Francisco where I make cool things for agencies and brands around globe. Mentas is loaded with useful features, each one with its own meaningful purpose. We listen to our users and integrate their feature requests on a regular basis. If you like my work then please do not  hesitate to reach out.</p>
+          </div>
+          <section class="whatido">
+            <h3 class="whatido__title">What I Do?</h3>
+            <ul class="whatido__link-list">
+              <li class="whatido__link-item">
+                <a class="whatido__link" href="#">FASHION</a>
+                <img class="whatido__img" src="img/whatido-img-1.png" alt="whatido__img">
+              </li>
+              <li class="whatido__link-item">
+                <a class="whatido__link" href="#">PORTRAITS</a>
+                <img class="whatido__img" src="img/whatido-img-2.png" alt="whatido__img">
+              </li>
+              <li class="whatido__link-item">
+                <a class="whatido__link" href="#">LIFESTYLE</a>
+                <img class="whatido__img" src="img/whatido-img-3.png" alt="whatido__img">
+              </li>
+            </ul>
+            <a class="whatido__link whatido__link--flickr" href="#">View My Flickr Profile</a>
+          </section>
+        </div>
+      </section>
+      <section class="clients">
+        <h2 class="clients__title">Happy Clients</h2>
+        <ul class="clients__list">
+          <li class="clients__item">
+            <a class="clients__link">
+              <img class="clients__img" src="img/clients-logo-1.png" alt="client-logo">
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link">
+              <img class="clients__img" src="img/clients-logo-2.png" alt="client-logo">
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link">
+              <img class="clients__img" src="img/clients-logo-3.png" alt="client-logo">
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link">
+              <img class="clients__img" src="img/clients-logo-4.png" alt="client-logo">
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link">
+              <img class="clients__img" src="img/clients-logo-5.png" alt="client-logo">
+            </a>
+          </li>
+          <li class="clients__item">
+            <a class="clients__link">
+              <img class="clients__img" src="img/clients-logo-6.png" alt="client-logo">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio__info">
+          <h2 class="portfolio__title">Portfolio</h2>
+          <p class="portfolio__description">The point of using Lorem Ipsum is that it has a non  more-or-less  dik sonormal distri bution of letters, as cliper opposed. a closer look to our fully furnished and beautiful demos, which can be use easily On this find website you can find some pictures I've taken during my travel. a clo look to our fully furnished and so beautful demos, which can be use.</p>
+          <a class="portfolio__link portfolio__link--full-description" href="#">Read More...</a>
+        </div>
+        <div class="portfolio__container">
+          <div class="portfolio__column portfolio__column--left">
+              <div class="portfolio__image">
+                <img src="img/portfolio-img-1.png">
+              </div>
+              <div class="portfolio__image">
+                <img src="img/portfolio-img-2.png">
+              </div>
+          </div>
+          <div class="portfolio__column portfolio__column--right">
+
+            <div class="portfolio__image">
+              <img src="img/portfolio-img-3.png">
+            </div>
+            <div class="portfolio__image">
+              <img src="img/portfolio-img-4.png">
+            </div>
+            <div class="portfolio__image">
+              <img src="img/portfolio-img-5.png">
+            </div>
+            <div class="portfolio__image">
+              <img src="img/portfolio-img-6.png">
+            </div>
+            <div class="portfolio__image">
+              <img src="img/portfolio-img-7.png">
+            </div>
+        </div>
+
+      </section>
+      <section class="blog">
+        <h2 class="blog__title">Blog</h2>
+        <p class="blog__description">The point of using Lorem Ipsum is that it has a non  more-or-less  normal distri bution of letters, as cliper opposed. a closer look to our fully,</p>
+        <div class="blog__container">
+          <div class="blog__post">
+            <img class="blog__image" src="img/blog-img-1.png">
+            <p class="blog__post-title">Design is the method of putting form and content together.</p>
+            <p class="blog__post-theme-date">Life style - July 3, 2017</p>
+            <p class="blog__post-text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p>
+          </div>
+          <div class="blog__post">
+            <img class="blog__image" src="img/blog-img-2.png">
+            <p class="blog__post-title">Design is the method of putting form and content together.</p>
+            <p class="blog__post-theme-date">Life style - July 3, 2017</p>
+            <p class="blog__post-text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p>
+          </div>
+          <div class="blog__post">
+            <img class="blog__image" src="img/blog-img-3.png">
+            <p class="blog__post-title">Design is the method of putting form and content together.</p>
+            <p class="blog__post-theme-date">Life style - July 3, 2017</p>
+            <p class="blog__post-text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-me">
+        <h2 class="contact-me__title">Let's work?</h2>
+        <div class="contact-me__container">
+          <input class="contact-me__input" type="text" placeholder="*Your name">
+          <input class="contact-me__input" type="text" placeholder="*Your Email">
+          <textarea class="contact-me__input contact-me__input--textarea">Your Massages</textarea>
+          <input class="contact-me__input contact-me__input--submit" type="submit" value="Send Massage">
+        </div>
+      </section>
+    </main>
     <footer class="page-footer">
+      <div class="logo">
+        <svg class="logo__img" width="30" height="30">
+          <use xlink:href="#icon-photographer-logo"></use>
+        </svg>
+        <p class="logo__name">Photography</p>
+      </div>
+      <div class="contacts">
+        <p class="contacts__address">237 Church St, San Francisco, CA 94114, USA</p>
+        <p class="contacts__email">nazmulhasanjingar@gmail.com</p>
+      </div>
+      <div class="latest-blog-posts">
+        <div class="latest-blog-posts__title">Latest Blog Posts</div>
+        <div class="latest-blog-posts__post">
+          <img class="latest-blog-posts__img" src="img/latest-blog-posts-img-1.png" alt="latest-blog-posts-img">
+          <div class="latest-blog-posts__info">
+            <div class="latest-blog-posts__text">Design is the method of putting form and content together.</div>
+            <div class="latest-blog-posts__theme-date">Life style - July 3, 2017</div>
+          </div>
+        </div>
+        <div class="latest-blog-posts__post">
+            <img class="latest-blog-posts__img" src="img/latest-blog-posts-img-2.png" alt="latest-blog-posts-img">
+            <div class="latest-blog-posts__info">
+              <div class="latest-blog-posts__text">Design is the method of putting form and content together.</div>
+              <div class="latest-blog-posts__theme-date">Life style - July 3, 2017</div>
+            </div>
+          </div>
+      </div>
+      <div class="links">
+        <h3 class="links__title">Quick Link</h3>
+        <ul class="links__list">
+          <li class="links__item">
+            <a class="links__link" href="#">Home</a>
+          </li>
+          <li class="links__item">
+            <a class="links__link" href="#">About</a>
+          </li>
+          <li class="links__item">
+            <a class="links__link" href="#">Clients</a>
+          </li>
+          <li class="links__item">
+            <a class="links__link" href="#">Portfolio</a>
+          </li>
+          <li class="links__item">
+            <a class="links__link" href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="instagram">
+        <h3 class="instagram__title">Instagram Update</h3>
+        <div class="instagram__container">
+          <img class="instagram__image" src="img/instagram-img-1.png" alt="instagram-img">
+          <img class="instagram__image" src="img/instagram-img-2.png" alt="instagram-img">
+          <img class="instagram__image" src="img/instagram-img-3.png" alt="instagram-img">
+          <img class="instagram__image" src="img/instagram-img-4.png" alt="instagram-img">
+          <img class="instagram__image" src="img/instagram-img-5.png" alt="instagram-img">
+          <img class="instagram__image" src="img/instagram-img-6.png" alt="instagram-img">
+        </div>
+      </div>
     </footer>
   </body>
 </html>

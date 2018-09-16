@@ -1,0 +1,92 @@
+.portfolio__info {
+  background-color: rgb(242, 194, 0);
+}
+
+.portfolio__title {
+  font-family: "Trirong", "Times New Roman", serif;
+  color: rgb(43, 45, 92);
+  font-size: 40px;
+  line-height: 76px;
+  font-weight: @regular;
+}
+
+.portfolio__description {
+  font-family: "Muli", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: @light;
+  color: rgb(43, 45, 92);
+}
+
+.portfolio__link--full-description {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 38px;
+  font-weight: @semi-bold;
+  color: rgb(43, 45, 92);
+}
+
+.portfolio__image img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media (min-width: @tablet-width) {
+  .portfolio__info {
+    padding-top: 10%;
+    padding-left: 4.87%;
+    padding-right: 4.37%;
+    width: 21%;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 110%;
+      height: 100%;
+      border: 1px solid black;
+      left: 0;
+      top: 10%;
+
+    }
+  }
+
+  .portfolio {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portfolio__container {
+    display: flex;
+    justify-content: space-between;
+    width: 66.563%;
+  }
+
+  .portfolio__column  {
+    display: flex;
+    flex-direction: column;
+    margin: -10px 0;
+  }
+
+  .portfolio__column--left {
+    width: 34.74%;
+  }
+
+  .portfolio__column--right {
+    width: 62.53%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .portfolio__image {
+    margin: 10px 0;
+  }
+
+  .portfolio__image img {
+    width: 100%;
+    height: auto;
+  }
+}

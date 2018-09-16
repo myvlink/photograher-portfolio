@@ -1,0 +1,50 @@
+.whatido__title {
+  margin: 0;
+  font-family: "Trirong", "Times New Roman", serif;
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: @light;
+}
+
+.whatido__link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.whatido__link-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.whatido__link {
+  color: rgb(86, 89, 102);
+  text-decoration: none;
+  font-weight: @semi-bold;
+}
+
+.whatido__link--flickr {
+  display: block;
+  width: 284px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 30px;
+  line-height: 64px;
+  font-size: 14px;
+  font-weight: @semi-bold;
+  background-color: rgb(43, 45, 92);
+}
+
+.whatido__img {
+  width: 130px;
+  height: 120px;
+}
+
+@media (min-width: @tablet-width) {
+
+  .whatido__link-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
