@@ -13,6 +13,11 @@
   filter: blur(10px);
 }
 
+.about-me__image img {
+  width: 100%;
+  height: auto;
+}
+
 .about-me__title {
   font-family: "Trirong", "Times New Roman", serif;
   text-align: center;
@@ -37,15 +42,28 @@
     padding-right: 13.5%;
   }
 
+  .about-me__container {
+    width: 53.068%;
+    margin-left: auto;
+  }
+
   .about-me__image {
     position: static;
-    width: 32.18%;
-    margin-right: 8.375%;
+    width: 37.18%;
     z-index: 1;
     filter: none;
+    margin-top: 100px;
   }
+
 
   .about-me__title {
     text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-me {
+    margin-bottom: 100px;
+    box-shadow: inset 0 -100px 0 0 rgb(255, 255, 255);
   }
 }

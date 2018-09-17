@@ -10,7 +10,7 @@
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header">
+    <header id="home" class="page-header">
       <a class="page-header__logo">
         <svg class="page-header__logo-img" width="30" height="30">
           <use xlink:href="#icon-photographer-logo"></use>
@@ -20,31 +20,34 @@
       <nav class="main-nav">
         <ul class="main-nav__menu-list">
           <li class="main-nav__menu-item">
-            <a class="main-nav__menu-link" href="#">Home</a>
+            <a class="main-nav__menu-link" href="#home">Home</a>
           </li>
           <li class="main-nav__menu-item">
-            <a class="main-nav__menu-link" href="#">About</a>
+            <a class="main-nav__menu-link" href="#about">About</a>
           </li>
           <li class="main-nav__menu-item">
-            <a class="main-nav__menu-link" href="#">Clients</a>
+            <a class="main-nav__menu-link" href="#clients">Clients</a>
           </li>
           <li class="main-nav__menu-item">
-            <a class="main-nav__menu-link" href="#">Portfolio</a>
+            <a class="main-nav__menu-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="main-nav__menu-item">
-            <a class="main-nav__menu-link" href="#">Blog</a>
+            <a class="main-nav__menu-link" href="#blog">Blog</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <h2 class="hero__title">Hello, I'm Dakota Jhonson</h2>
+        <h2 class="hero__title">Hello, I'm<br> Dakota Jhonson</h2>
         <p class="hero__description">I’m an Art Director & Photographer based in the San Francisco.</p>
-        <a class="hero__link" href="#">See My Works</a>
+        <a class="hero__link" href="#portfolio">See My Works</a>
+        <a class="hero__link" href="#about"></a>
       </section>
-      <section class="about-me">
-        <img class="about-me__image" src="img/about-me-img.png" alt="about-me-img">
+      <section id="about" class="about-me">
+        <div class="about-me__image">
+          <img src="img/about-me-img.png" alt="about-me-img">
+        </div>
         <div class="about-me__container">
           <div class="about-me__info">
             <h2 class="about-me__title">About MySelf</h2>
@@ -70,7 +73,7 @@
           </section>
         </div>
       </section>
-      <section class="clients">
+      <section id="clients"class="clients">
         <h2 class="clients__title">Happy Clients</h2>
         <ul class="clients__list">
           <li class="clients__item">
@@ -105,7 +108,7 @@
           </li>
         </ul>
       </section>
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="portfolio__info">
           <h2 class="portfolio__title">Portfolio</h2>
           <p class="portfolio__description">The point of using Lorem Ipsum is that it has a non  more-or-less  dik sonormal distri bution of letters, as cliper opposed. a closer look to our fully furnished and beautiful demos, which can be use easily On this find website you can find some pictures I've taken during my travel. a clo look to our fully furnished and so beautful demos, which can be use.</p>
@@ -137,9 +140,8 @@
               <img src="img/portfolio-img-7.png">
             </div>
         </div>
-
       </section>
-      <section class="blog">
+      <section id="blog" class="blog">
         <h2 class="blog__title">Blog</h2>
         <p class="blog__description">The point of using Lorem Ipsum is that it has a non  more-or-less  normal distri bution of letters, as cliper opposed. a closer look to our fully,</p>
         <div class="blog__container">
@@ -227,7 +229,7 @@
           </div>
           <div class="latest-blog-posts__info">
             <div class="latest-blog-posts__text">Design is the method of putting form and content together.</div>
-            <div class="latest-blog-posts__theme-date">Life style - July 3, 2017</div>
+            <div class="latest-blog-posts__theme-date"><span class="latest-blog-posts__theme">Life style</span> - July 3, 2017</div>
           </div>
         </div>
         <div class="latest-blog-posts__post">
@@ -236,7 +238,7 @@
             </div>
             <div class="latest-blog-posts__info">
               <div class="latest-blog-posts__text">Design is the method of putting form and content together.</div>
-              <div class="latest-blog-posts__theme-date">Life style - July 3, 2017</div>
+              <div class="latest-blog-posts__theme-date"><span class="latest-blog-posts__theme">Life style</span> - July 3, 2017</div>
             </div>
           </div>
       </div>
@@ -244,19 +246,19 @@
         <h3 class="links__title">Quick Link</h3>
         <ul class="links__list">
           <li class="links__item">
-            <a class="links__link" href="#">Home</a>
+            <a class="links__link" href="#home">Home</a>
           </li>
           <li class="links__item">
-            <a class="links__link" href="#">About</a>
+            <a class="links__link" href="#about">About</a>
           </li>
           <li class="links__item">
-            <a class="links__link" href="#">Clients</a>
+            <a class="links__link" href="#clients">Clients</a>
           </li>
           <li class="links__item">
-            <a class="links__link" href="#">Portfolio</a>
+            <a class="links__link" href="#portfolio">Portfolio</a>
           </li>
           <li class="links__item">
-            <a class="links__link" href="#">Blog</a>
+            <a class="links__link" href="#blog">Blog</a>
           </li>
         </ul>
       </div>
@@ -285,6 +287,9 @@
           </div>
         </div>
       </div>
+      <a class="page-footer__link-to-up" href="#about"></a>
     </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/animation.js"></script>
   </body>
 </html>

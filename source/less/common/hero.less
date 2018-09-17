@@ -1,17 +1,23 @@
 .hero {
   background-image: url("../img/hero-img.png");
-  background-position: center;
+  background-position: 70% center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
 }
 
 .hero__title {
-  padding-top: 100px;
+  padding-top: 35%;
   font-size: 60px;
   line-height: 72px;
   font-weight: @light;
   color: rgb(255, 255, 255);
   margin: 0;
+  font-family: "Trirong", "Times New Roman", serif;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: @light;
 }
 
 .hero__description {
@@ -23,7 +29,6 @@
 
 .hero__link {
   display: block;
-  margin: 0 auto;
   font-size: 16px;
   width: 220px;
   text-decoration: none;
@@ -32,12 +37,37 @@
   color: rgb(43, 45, 92);
   background-color: rgb(242, 194, 0);
   border-radius: 30px;
+  margin: 0 auto;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-arrow-down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .hero {
-    margin-top: -40px;
+    margin-top: -90px;
     padding-left: 13.5%;
     padding-right: 13.5%;
+  }
+
+  .hero__link {
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    background-position: center center;
   }
 }

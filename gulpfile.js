@@ -18,6 +18,7 @@ var del = require("del");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
 var htmlmin = require("gulp-htmlmin");
+var svgmin = require('gulp-svgmin');
 
 
 gulp.task("style", function () {
@@ -32,6 +33,12 @@ gulp.task("style", function () {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("compresssvg", function () {
+  return gulp.src("source/img/*.svg")
+      .pipe(svgmin())
+      .pipe(gulp.dest("source/img/"));
 });
 
 gulp.task("compressjs", function (cb) {
@@ -82,6 +89,7 @@ gulp.task("webp", function () {
 
 gulp.task("build", function (done) {
   run(
+    "compresssvg",
     "clean",
     "copy",
     "style",

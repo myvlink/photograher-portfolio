@@ -11,3 +11,19 @@
 .page-footer__container--first-column {
   width: 200px;
 }
+
+.page-footer__link-to-up {
+  &::after {
+    content: "";
+    position: fixed;
+    right: 17.6%;
+    bottom: 50px;
+    width: 70px;
+    height: 57px;
+    background-color: rgb(203, 203, 215);
+    background-image: url("../img/icon-arrow-up.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px 17px;
+  }
+}
