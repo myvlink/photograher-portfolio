@@ -4,12 +4,20 @@
   font-size: 26px;
   line-height: 38px;
   font-weight: @light;
+  text-align: center;
 }
 
 .whatido__link-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.whatido__link-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .whatido__link-item {
@@ -33,6 +41,7 @@
   font-size: 14px;
   font-weight: @semi-bold;
   background-color: rgb(43, 45, 92);
+  margin: 0 auto;
 }
 
 .whatido__img {
@@ -41,10 +50,10 @@
 }
 
 @media (min-width: @tablet-width) {
-
-  .whatido__link-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .whatido__title {
+    text-align: left;
+  }
+  .whatido__link--flickr {
+    margin: 0;
   }
 }

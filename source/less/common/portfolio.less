@@ -4,10 +4,12 @@
 
 .portfolio__title {
   font-family: "Trirong", "Times New Roman", serif;
+  text-align: center;
   color: rgb(43, 45, 92);
   font-size: 40px;
   line-height: 76px;
   font-weight: @regular;
+  margin: 0;
 }
 
 .portfolio__description {
@@ -29,10 +31,14 @@
 .portfolio__image img {
   display: block;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
+  .portfolio__title {
+    text-align: left;
+  }
+
   .portfolio__info {
     padding-top: 10%;
     padding-left: 4.87%;
@@ -43,7 +49,7 @@
     &::after {
       content: "";
       position: absolute;
-      width: 110%;
+      width: 110.3%;
       height: 100%;
       border: 1px solid black;
       left: 0;
@@ -55,6 +61,7 @@
   .portfolio {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
   }
 
   .portfolio__container {
