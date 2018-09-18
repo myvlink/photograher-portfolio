@@ -32,6 +32,7 @@
 }
 
 .whatido__link--flickr {
+  text-transform: uppercase;
   display: block;
   width: 284px;
   color: rgb(255, 255, 255);
@@ -42,6 +43,12 @@
   font-weight: @semi-bold;
   background-color: rgb(43, 45, 92);
   margin: 0 auto;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgb(242, 194, 0);
+    transition: 0.3s;
+  }
 }
 
 .whatido__img {
@@ -52,8 +59,15 @@
 @media (min-width: @tablet-width) {
   .whatido__title {
     text-align: left;
+    padding-top: 35px;
   }
+
   .whatido__link--flickr {
     margin: 0;
+    margin-top: 35px;
+  }
+
+  .whatido__link-list {
+    padding-top: 35px;
   }
 }

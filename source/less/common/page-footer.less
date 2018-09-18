@@ -13,6 +13,7 @@
 }
 
 .page-footer__link-to-up {
+
   &::after {
     content: "";
     position: fixed;
@@ -25,5 +26,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 17px 17px;
+    transition: 0.3s;
   }
+
+  &:hover::after {
+    background-color: rgb(166, 166, 175);
+    transition: 0.3s;
+  }
+}
+
+.page-footer__link-to-up--hidden {
+  display: none;
 }

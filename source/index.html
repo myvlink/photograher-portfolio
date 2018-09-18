@@ -42,6 +42,23 @@
         <h2 class="hero__title">Hello, I'm<br> Dakota Jhonson</h2>
         <p class="hero__description">I’m an Art Director & Photographer based in the San Francisco.</p>
         <a class="hero__link" href="#portfolio">See My Works</a>
+        <div class="follow-me follow-me--hero">
+          <p class="follow-me__title visually-hidden">Follow me on:</p>
+          <div class="follow-me__logos">
+            <svg class="follow-me__logo-img" width="20" height="20">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+            <svg class="follow-me__logo-img" width="20" height="20">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+            <svg class="follow-me__logo-img" width="20" height="20">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+            <svg class="follow-me__logo-img" width="20" height="20">
+              <use xlink:href="#icon-flickr"></use>
+            </svg>
+          </div>
+        </div>
         <a class="hero__link" href="#about"></a>
       </section>
       <section id="about" class="about-me">
@@ -182,12 +199,12 @@
       </section>
       <section class="contact-me">
         <h2 class="contact-me__title">Let's work?</h2>
-        <div class="contact-me__container">
-          <input class="contact-me__input" type="text" placeholder="*Your name">
-          <input class="contact-me__input" type="text" placeholder="*Your Email">
-          <textarea class="contact-me__input contact-me__input--textarea">Your Massages</textarea>
-          <input class="contact-me__input contact-me__input--submit" type="submit" value="Send Massage">
-        </div>
+          <form class="contact-me__container contact-me__form" method="post" enctype="multipart/form-data" action="http://ptsv2.com/t/pdk82-1537270547/post" autocomplete="off">
+            <input class="contact-me__input" type="text" placeholder="*Your name" name="name" required>
+            <input class="contact-me__input contact-me__input--email" type="text" placeholder="*Your Email" name="email" required>
+            <textarea class="contact-me__input contact-me__input--textarea" name="massage">Your Massages</textarea>
+            <input class="contact-me__input contact-me__input--submit" type="submit" value="Send Massage">
+          </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -287,9 +304,13 @@
           </div>
         </div>
       </div>
-      <a class="page-footer__link-to-up" href="#about"></a>
+      <a class="page-footer__link-to-up" href="#home"></a>
     </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/animation.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/hide-elements.js"></script>
+  <script src="js/backend.js"></script>
+  <script src="js/form.js"></script>
   </body>
 </html>
