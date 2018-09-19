@@ -27,11 +27,14 @@
       node.style.fontSize = '30px';
       node.textContent = errorMessage;
       document.body.insertAdjacentElement('afterbegin', node);
+      setTimeout(function() {
+        node.remove();
+      }, 7000);
     },
 
     loadHandler: function () {
       var node = document.createElement('div');
-      node.style = 'z-index: 100; padding: 10px; margin: 0 auto; text-align: center; background-color: green;';
+      node.style = 'z-index: 100; padding: 10px; margin: 0 auto; text-align: center; background-color: rgb(43, 45, 92); color: rgb(255, 255, 255)';
       node.style.position = 'fixed';
       node.style.top = 0;
       node.style.left = 0;
@@ -39,6 +42,9 @@
       node.style.fontSize = '30px';
       node.textContent = 'Данные успешно отправлены';
       document.body.insertAdjacentElement('afterbegin', node);
+      setTimeout(function() {
+        node.remove();
+      }, 7000);
     }
   }
 })()

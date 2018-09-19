@@ -27,10 +27,15 @@
   color: rgb(43, 45, 92);
   font-size: 15px;
   height: 45px;
+  line-height: 45px;
   font-weight: @light;
   margin-bottom: 26px;
   background-color: rgb(182, 182, 199);
   border: none;
+}
+
+.contact-me__input--textarea {
+  height: 90px;
 }
 
 .contact-me__input--submit {
@@ -52,6 +57,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contact-me {
+    margin-top: 50px;
+    padding-bottom: 60px;
+  }
+
   .contact-me__container {
     width: 55%;
   }
@@ -62,10 +72,3 @@
     width: 31.3125%;
   }
 }
-
-
-
-// .contact-me__input {
-//   margin: 0 auto;
-//   width: 501px;
-// }

@@ -1,3 +1,7 @@
+.portfolio {
+  position: relative;
+}
+
 .portfolio__info {
   background-color: rgb(242, 194, 0);
 }
@@ -34,6 +38,26 @@
   width: 100%;
 }
 
+.portfolio__see-more {
+  display: block;
+  margin: 30px auto;
+  width: 217px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 51px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(242, 194, 0);
+  border: 1px solid rgb(242, 194, 0);
+  border-radius: 30px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgb(43, 45, 92);
+    transition: 0.3s;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .portfolio__title {
     text-align: left;
@@ -61,7 +85,7 @@
   .portfolio {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
   }
 
   .portfolio__container {
@@ -95,5 +119,12 @@
   .portfolio__image img {
     width: 100%;
     height: auto;
+  }
+
+  .portfolio__see-more {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
   }
 }
