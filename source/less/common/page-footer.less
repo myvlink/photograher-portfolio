@@ -15,26 +15,28 @@
 }
 
 .page-footer__link-to-up {
+  position: fixed;
+  right: 17.6%;
+  bottom: 50px;
+  width: 70px;
+  height: 57px;
+  background-color: rgb(203, 203, 215);
+  background-image: url("../img/icon-arrow-up.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17px 17px;
+  transition: 0.3s;
 
-  &::after {
-    content: "";
-    position: fixed;
-    right: 17.6%;
-    bottom: 50px;
-    width: 70px;
-    height: 57px;
-    background-color: rgb(203, 203, 215);
-    background-image: url("../img/icon-arrow-up.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 17px 17px;
-    transition: 0.3s;
-  }
-
-  &:hover::after {
+  &:hover {
     background-color: rgb(166, 166, 175);
     transition: 0.3s;
   }
+}
+
+.page-footer__link-to-up--stopped {
+  position: absolute;
+  top: -55px;
+  right: 17.6%;
 }
 
 .page-footer__link-to-up--hidden {

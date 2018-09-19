@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property="og:image" content="github.io/photographer-portfolio/img/portfolio-img-1.png">
-    <meta property="og:image" content="github.io/photographer-portfolio/img/portfolio-img-2.png">
-    <meta property="og:image" content="github.io/photographer-portfolio/img/portfolio-img-3.png">
-    <meta property="og:image" content="github.io/photographer-portfolio/img/portfolio-img-4.png">
-    <meta property="og:image" content="github.io/photographer-portfolio/img/portfolio-img-5.png">
-    <meta property="og:image" content="github.io/photographer-portfolio/img/portfolio-img-6.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Photographer portfolio">
+    <meta property="og:title" content="Title">
+    <meta property="og:description" content="Photographer portfolio">
+    <meta property="og:url" content="https://least-thyristor.000webhostapp.com/build/">
+    <meta property="og:locale" content="en_EN">
     <title>Photographer portfolio</title>
+    <link rel="preload" href="fonts/muli-black.woff2" as="font">
+    <link rel="preload" href="fonts/muli-extralight.woff2" as="font">
+    <link rel="preload" href="fonts/muli-light.woff2" as="font">
+    <link rel="preload" href="fonts/muli-regular.woff2" as="font">
+    <link rel="preload" href="fonts/muli-semibold.woff2" as="font">
+    <link rel="preload" href="fonts/trirong-light.woff2" as="font">
+    <link rel="preload" href="fonts/trirong-regular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -65,11 +72,14 @@
             </svg>
           </div>
         </div>
-        <a class="hero__link" href="#about"></a>
+        <a class="hero__link" href="#about"><span class="visually-hidden">about-me</span></a>
       </section>
       <section id="about" class="about-me">
         <div class="about-me__image">
-          <img src="img/about-me-img.png" alt="about-me-img">
+          <picture>
+            <source type="image/webp" srcset="img/about-me-img.webp">
+            <img class="clients__img" src="img/about-me-img.jpg" alt="about-me-img">
+          </picture>
         </div>
         <div class="about-me__container">
           <div class="about-me__info">
@@ -81,22 +91,31 @@
             <ul class="whatido__link-list">
               <li class="whatido__link-item">
                 <a class="whatido__link" href="#">FASHION</a>
-                <img class="whatido__img" src="img/whatido-img-1.png" alt="whatido__img">
+                <picture>
+                  <source type="image/webp" srcset="img/whatido-img-1.webp">
+                  <img class="whatido__img" src="img/whatido-img-1.jpg" alt="whatido__img">
+                </picture>
               </li>
               <li class="whatido__link-item">
                 <a class="whatido__link" href="#">PORTRAITS</a>
-                <img class="whatido__img" src="img/whatido-img-2.png" alt="whatido__img">
+                <picture>
+                  <source type="image/webp" srcset="img/whatido-img-2.webp">
+                  <img class="whatido__img" src="img/whatido-img-2.jpg" alt="whatido__img">
+                </picture>
               </li>
               <li class="whatido__link-item">
                 <a class="whatido__link" href="#">LIFESTYLE</a>
-                <img class="whatido__img" src="img/whatido-img-3.png" alt="whatido__img">
+                <picture>
+                  <source type="image/webp" srcset="img/whatido-img-3.webp">
+                  <img class="whatido__img" src="img/whatido-img-3.jpg" alt="whatido__img">
+                </picture>
               </li>
             </ul>
             <a class="whatido__link whatido__link--flickr" href="#">View My Flickr Profile</a>
           </section>
         </div>
       </section>
-      <section id="clients"class="clients">
+      <section id="clients" class="clients">
         <h2 class="clients__title">Happy Clients</h2>
         <ul class="clients__list">
           <li class="clients__item">
@@ -139,30 +158,107 @@
         </div>
         <div class="portfolio__container">
           <div class="portfolio__column portfolio__column--left">
-              <div class="portfolio__image">
-                <div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,blogger,delicious,digg,reddit,evernote,linkedin,lj,pocket,qzone,renren,sinaWeibo,surfingbird,tencentWeibo,tumblr,viber,whatsapp,skype,telegram" data-image="github.io/photographer-portfolio/img/portfolio-img-1.png"></div>
-                <img src="img/portfolio-img-1.png">
+            <div class="portfolio__image">
+              <picture>
+                <source type="image/webp" srcset="img/portfolio-img-1.webp">
+                <img class="clients__img" src="img/portfolio-img-1.jpg" alt="client-logo">
+              </picture>
+              <div
+                class="ya-share2"
+                data-services="facebook,twitter,vkontakte"
+                data-description="дескрипшен"
+                data-url="https://least-thyristor.000webhostapp.com/index.html"
+                data-title="Портфолио"
+                data-image="https://least-thyristor.000webhostapp.com/build/img/portfolio-img-1.jpg">
               </div>
-              <div class="portfolio__image">
-                <img src="img/portfolio-img-2.png">
+            </div>
+            <div class="portfolio__image">
+              <picture>
+                <source type="image/webp" srcset="img/portfolio-img-2.webp">
+                <img class="clients__img" src="img/portfolio-img-2.jpg" alt="client-logo">
+              </picture>
+              <div
+                class="ya-share2"
+                data-services="facebook,twitter,vkontakte"
+                data-description="дескрипшен"
+                data-url="https://least-thyristor.000webhostapp.com/index.html"
+                data-title="Портфолио"
+                data-image="https://least-thyristor.000webhostapp.com/build/img/portfolio-img-2.jpg">
               </div>
+            </div>
           </div>
           <div class="portfolio__column portfolio__column--right">
             <div class="portfolio__image">
-              <img src="img/portfolio-img-3.png">
+              <picture>
+                <source type="image/webp" srcset="img/portfolio-img-3.webp">
+                <img class="clients__img" src="img/portfolio-img-3.jpg" alt="client-logo">
+              </picture>
+              <div
+                  class="ya-share2"
+                  data-services="facebook,twitter,vkontakte"
+                  data-description="дескрипшен"
+                  data-url="https://least-thyristor.000webhostapp.com/index.html"
+                  data-title="Портфолио"
+                  data-image="https://least-thyristor.000webhostapp.com/build/img/portfolio-img-3.jpg">
+                </div>
             </div>
             <div class="portfolio__image">
-              <img src="img/portfolio-img-4.png">
+              <picture>
+                <source type="image/webp" srcset="img/portfolio-img-4.webp">
+                <img class="clients__img" src="img/portfolio-img-4.jpg" alt="client-logo">
+              </picture>
+              <div
+                  class="ya-share2"
+                  data-services="facebook,twitter,vkontakte"
+                  data-description="дескрипшен"
+                  data-url="https://least-thyristor.000webhostapp.com/index.html"
+                  data-title="Портфолио"
+                  data-image="https://least-thyristor.000webhostapp.com/build/img/portfolio-img-4.jpg">
+                </div>
             </div>
             <div class="portfolio__image">
-              <img src="img/portfolio-img-5.png">
+              <picture>
+                <source type="image/webp" srcset="img/portfolio-img-5.webp">
+                <img class="clients__img" src="img/portfolio-img-5.jpg" alt="client-logo">
+              </picture>
+              <div
+                  class="ya-share2"
+                  data-services="facebook,twitter,vkontakte"
+                  data-description="дескрипшен"
+                  data-url="https://least-thyristor.000webhostapp.com/index.html"
+                  data-title="Портфолио"
+                  data-image="https://least-thyristor.000webhostapp.com/build/img/portfolio-img-5.jpg">
+                </div>
             </div>
             <div class="portfolio__image">
-              <img src="img/portfolio-img-6.png">
+              <picture>
+                <source type="image/webp" srcset="img/portfolio-img-6.webp">
+                <img class="clients__img" src="img/portfolio-img-6.jpg" alt="client-logo">
+              </picture>
+              <div
+                  class="ya-share2"
+                  data-services="facebook,twitter,vkontakte"
+                  data-description="дескрипшен"
+                  data-url="https://least-thyristor.000webhostapp.com/index.html"
+                  data-title="Портфолио"
+                  data-image="https://least-thyristor.000webhostapp.com/build/img/portfolio-img-6.jpg">
+                </div>
             </div>
             <div class="portfolio__image">
-              <img src="img/portfolio-img-7.png">
+              <picture>
+                <source type="image/webp" srcset="img/portfolio-img-7.webp">
+                <img class="clients__img" src="img/portfolio-img-7.jpg" alt="client-logo">
+              </picture>
+              <div
+                  class="ya-share2"
+                  data-services="facebook,twitter,vkontakte"
+                  data-description="дескрипшен"
+                  data-url="https://least-thyristor.000webhostapp.com/index.html"
+                  data-title="Портфолио"
+                  data-image="https://least-thyristor.000webhostapp.com/build/img/portfolio-img-7.jpg">
+                </div>
             </div>
+          </div>
         </div>
         <a class="portfolio__see-more" href="#">See more</a>
       </section>
@@ -172,7 +268,10 @@
         <div class="blog__container">
           <div class="blog__post">
             <div class="blog__image">
-              <img src="img/blog-img-1.png">
+              <picture>
+                <source type="image/webp" srcset="img/blog-img-1.webp">
+                <img class="clients__img" src="img/blog-img-1.jpg" alt="blog-image">
+              </picture>
             </div>
             <div class="post__info">
               <p class="blog__post-title">Design is the method of putting form and content together.</p>
@@ -183,7 +282,10 @@
           </div>
           <div class="blog__post">
             <div class="blog__image">
-              <img src="img/blog-img-2.png">
+              <picture>
+                <source type="image/webp" srcset="img/blog-img-2.webp">
+                <img class="clients__img" src="img/blog-img-2.jpg" alt="blog-image">
+              </picture>
             </div>
             <div class="post__info">
               <p class="blog__post-title">Design is the method of putting form and content together.</p>
@@ -194,7 +296,10 @@
           </div>
           <div class="blog__post">
             <div class="blog__image">
-              <img src="img/blog-img-3.png">
+              <picture>
+                <source type="image/webp" srcset="img/blog-img-3.webp">
+                <img class="clients__img" src="img/blog-img-3.jpg" alt="blog-image">
+              </picture>
             </div>
             <div class="post__info">
               <p class="blog__post-title">Design is the method of putting form and content together.</p>
@@ -208,9 +313,12 @@
       <section class="contact-me">
         <h2 class="contact-me__title">Let's work?</h2>
           <form class="contact-me__container contact-me__form" method="post" enctype="multipart/form-data" action="http://httpbin.org/post" autocomplete="off">
-            <input class="contact-me__input" type="text" placeholder="*Your name" name="name" required>
-            <input class="contact-me__input contact-me__input--email" type="text" placeholder="*Your Email" name="email" required>
-            <textarea class="contact-me__input contact-me__input--textarea" name="massage">Your Massages</textarea>
+            <input class="contact-me__input" type="text" placeholder="*Your name" name="name" id="name" required>
+            <label class="contact-me__label visually-hidden" for="name">Name</label>
+            <input class="contact-me__input contact-me__input--email" type="text" placeholder="*Your Email" name="email" id="email" required>
+            <label class="contact-me__label visually-hidden" for="email">Email</label>
+            <textarea class="contact-me__input contact-me__input--textarea" name="massage" id="massage">Your Massages</textarea>
+            <label class="contact-me__label visually-hidden" for="massage">Massage</label>
             <input class="contact-me__input contact-me__input--submit" type="submit" value="Send Massage">
           </form>
       </section>
@@ -250,7 +358,10 @@
         <div class="latest-blog-posts__title">Latest Blog Posts</div>
         <div class="latest-blog-posts__post">
           <div class="latest-blog-posts__img">
-            <img src="img/latest-blog-posts-img-1.png" alt="latest-blog-posts-img">
+            <picture>
+              <source type="image/webp" srcset="img/latest-blog-posts-img-2.webp">
+              <img class="clients__img" src="img/latest-blog-posts-img-1.jpg" alt="latest-blog-posts-img">
+            </picture>
           </div>
           <div class="latest-blog-posts__info">
             <div class="latest-blog-posts__text">Design is the method of putting form and content together.</div>
@@ -259,7 +370,10 @@
         </div>
         <div class="latest-blog-posts__post">
             <div class="latest-blog-posts__img">
-              <img src="img/latest-blog-posts-img-2.png" alt="latest-blog-posts-img">
+              <picture>
+                <source type="image/webp" srcset="img/latest-blog-posts-img-2.webp">
+                <img class="clients__img" src="img/latest-blog-posts-img-2.jpg" alt="latest-blog-posts-img">
+              </picture>
             </div>
             <div class="latest-blog-posts__info">
               <div class="latest-blog-posts__text">Design is the method of putting form and content together.</div>
@@ -291,28 +405,28 @@
         <h3 class="instagram__title">Instagram Update</h3>
         <div class="instagram__container">
           <div class="instagram__image">
-            <img src="img/instagram-img-1.png" alt="instagram-img">
+            <img src="img/instagram-img-1.jpg" alt="instagram-img">
           </div>
           <div class="instagram__image">
             <div class="instagram__image">
-              <img src="img/instagram-img-2.png" alt="instagram-img">
+              <img src="img/instagram-img-2.jpg" alt="instagram-img">
             </div>
             <div class="instagram__image">
-              <img src="img/instagram-img-3.png" alt="instagram-img">
+              <img src="img/instagram-img-3.jpg" alt="instagram-img">
             </div>
           </div>
           <div class="instagram__image">
-            <img src="img/instagram-img-4.png" alt="instagram-img">
+            <img src="img/instagram-img-4.jpg" alt="instagram-img">
           </div>
           <div class="instagram__image">
-            <img src="img/instagram-img-5.png" alt="instagram-img">
+            <img src="img/instagram-img-5.jpg" alt="instagram-img">
           </div>
           <div class="instagram__image">
-            <img src="img/instagram-img-6.png" alt="instagram-img">
+            <img src="img/instagram-img-6.jpg" alt="instagram-img">
           </div>
         </div>
       </div>
-      <a class="page-footer__link-to-up" href="#home"></a>
+      <a class="page-footer__link-to-up page-footer__link-to-up--stopped" href="#home"></a>
     </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/animation.js"></script>
@@ -321,6 +435,5 @@
   <script src="js/backend.js"></script>
   <script src="js/form.js"></script>
   <script src="https://yastatic.net/share2/share.js" async="async"></script>
-  <!-- <script src="js/fix-element.js"></script> -->
   </body>
 </html>
