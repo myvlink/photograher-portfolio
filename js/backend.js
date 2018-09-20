@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  var URL_UPLOAD = 'http://httpbin.org/post';
+  var URL_UPLOAD = 'https://httpbin.org/post';
   var STATUS_SUCCES = 200;
   var TIMEOUT = 10000;
   window.backend = {
